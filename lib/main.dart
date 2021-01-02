@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Gifty Plus'),
     );
   }
 }
@@ -28,39 +28,31 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  CounterBloc _counterBloc = new CounterBloc(initialVal:0);
+  CounterBloc _counterBloc = new CounterBloc(initialVal: 0);
   final val = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-
         title: Text(widget.title),
       ),
       body: Center(
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-
-            TextField(
-              controller: val
-            ),
+            TextField(controller: val),
             StreamBuilder(
               stream: _counterBloc.counterObservable,
-              builder: (BuildContext context, AsyncSnapshot snapshot){
-                return Text(
-                  'Counter is pressed ${snapshot.data} times.'
-                );
+              builder: (BuildContext context, AsyncSnapshot snapshot) {
+                return Text('Counter is pressed ${snapshot.data} times.');
               },
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
+        onPressed: () {
           _counterBloc.increment();
         },
         tooltip: 'Increment',
@@ -68,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+
   @override
   void dispose() {
     _counterBloc.dispose();
