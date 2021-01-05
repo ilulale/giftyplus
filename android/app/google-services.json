@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "902334375004",
+    "project_id": "giftyplus-458a4",
+    "storage_bucket": "giftyplus-458a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902334375004:android:c47d2bd758df80f64e7299",
+        "android_client_info": {
+          "package_name": "com.hanatech.bloc_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902334375004-gq0eb629egl4geuu718fd7bj4p8253g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIuiUyyWD87PkWyZkfTYD5etCxjWF1RYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902334375004-gq0eb629egl4geuu718fd7bj4p8253g9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "902334375004-0vqj8a48fq6h5nelus0d40ipm31cmsgq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hanatech.blocLearn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
